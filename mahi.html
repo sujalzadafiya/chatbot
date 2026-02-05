@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Kids Game</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background: linear-gradient(to right, #ff7e5f, #feb47b); /* Fun gradient background */
+            color: white;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 30px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .game-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            max-width: 600px;
+            margin: 20px;
+            animation: bounce 2s ease-in-out infinite;
+        }
+
+        .game-container h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #ff7e5f;
+        }
+
+        .game-container p {
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        .start-button {
+            background-color: #ff7e5f;
+            color: white;
+            font-size: 1.5rem;
+            padding: 15px 30px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .start-button:hover {
+            background-color: #feb47b;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .start-button:active {
+            background-color: #e67e22;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .game-icon {
+            font-size: 100px;
+            color: #ff7e5f;
+            margin-bottom: 20px;
+            animation: rotate 3s infinite linear;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 1rem;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main content -->
+    <h1>Welcome to Fun Kids Game!</h1>
+
+    <div class="game-container">
+        <div class="game-icon">
+            🎮
+        </div>
+        <h2>Let's Play and Have Fun!</h2>
+        <p>Join the fun with exciting challenges, puzzles, and games for kids. Are you ready to play?</p>
+        <button class="start-button" onclick="alert('Game Started!')">Start Game</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Fun Kids Game. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
